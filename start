@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "/backups" > /var/urbackup/backupfolder
+chown urbackup:urbackup /backups
+exec urbackupsrv "$@"
