@@ -29,6 +29,8 @@ RUN echo 'deb http://download.opensuse.org/repositories/home:/uroni/Debian_9.0/ 
     apt-get install -y --no-install-recommends --allow-unauthenticated urbackup-server btrfs-tools &&\
     rm -rf /var/lib/apt/lists/*
 
+RUN mkdir /web-backup && cp -R /usr/share/urbackup/* /web-backup
+
 COPY start /usr/bin/start
 
 EXPOSE 55413/tcp 55414/tcp 55415/tcp 35623/udp
