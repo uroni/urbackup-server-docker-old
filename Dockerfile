@@ -33,6 +33,6 @@ COPY start /usr/bin/start
 
 EXPOSE 55413/tcp 55414/tcp 55415/tcp 35623/udp
 
-VOLUME [ "/backups", "/var/urbackup", "/var/log", "/usr/share/urbackup" ]
+VOLUME [ "/backups", "/var/urbackup", "/var/log" ]
 ENTRYPOINT ["/usr/bin/start"]
 CMD ["run"]
