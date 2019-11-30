@@ -1,6 +1,6 @@
 Image to run UrBackup in Docker.
 
-Ceveats:
+Caveats:
 
  * Image mounting is disabled
  * ZFS snapshotting cannot be used
